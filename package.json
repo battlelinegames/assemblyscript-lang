@@ -1,5 +1,6 @@
 {
 	"name": "assemblyscript-lang",
+	"main": "lib/index.ts",
 	"displayName": "AssemblyScript lang",
 	"description": "AssemblyScript language highlighting",
 	"publisher": "battlelinegames",
@@ -37,5 +38,8 @@
 		"id": "38c50be3-7885-4de8-a31a-ed495846493b",
 		"publisherDisplayName": "BattleLine Games LLC.",
 		"publisherId": "0e98d800-30aa-4f22-a8cb-a0adb3413be5"
+	},
+	"devDependencies": {
+		"typescript": "^3.8.3"
 	}
 }

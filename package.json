@@ -1,0 +1,41 @@
+{
+	"name": "assemblyscript-lang",
+	"displayName": "AssemblyScript lang",
+	"description": "AssemblyScript language highlighting",
+	"publisher": "battlelinegames",
+	"version": "0.0.1",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "assemblyscript",
+				"aliases": [
+					"AssemblyScript",
+					"assemblyscript"
+				],
+				"extensions": [
+					".asc"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "assemblyscript",
+				"scopeName": "source.asc",
+				"path": "./syntaxes/assemblyscript.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "38c50be3-7885-4de8-a31a-ed495846493b",
+		"publisherDisplayName": "BattleLine Games LLC.",
+		"publisherId": "0e98d800-30aa-4f22-a8cb-a0adb3413be5"
+	}
+}

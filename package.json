@@ -12,6 +12,9 @@
   "categories": [
     "Programming Languages"
   ],
+  "activationEvents": [
+    "onLanguage:assemblyscript"
+  ],
   "contributes": {
     "configuration": {
       "type": "object",

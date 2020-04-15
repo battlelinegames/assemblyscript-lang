@@ -41,5 +41,8 @@
 	},
 	"devDependencies": {
 		"typescript": "^3.8.3"
+	},
+	"scripts": {
+		"tsc": "tsc"
 	}
 }

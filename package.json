@@ -73,6 +73,7 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "prettier": "prettier --write ."
   }
 }

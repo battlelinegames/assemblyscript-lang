@@ -21,22 +21,24 @@ const connection: IConnection = createConnection(
 
 const documents = new TextDocuments(TextDocument);
 
-connection.onInitialize((): InitializeResult => {
-  return {
-    capabilities: {
-      documentFormattingProvider: false,
-      documentRangeFormattingProvider: false,
-      textDocumentSync: {
-        openClose: true,
-        change: TextDocumentSyncKind.Full,
+connection.onInitialize(
+  (): InitializeResult => {
+    return {
+      capabilities: {
+        documentFormattingProvider: false,
+        documentRangeFormattingProvider: false,
+        textDocumentSync: {
+          openClose: true,
+          change: TextDocumentSyncKind.Full,
+        },
+        documentHighlightProvider: false,
+        hoverProvider: false,
+        referencesProvider: false,
+        definitionProvider: false,
       },
-      documentHighlightProvider: false,
-      hoverProvider: false,
-      referencesProvider: false,
-      definitionProvider: false,
-    },
-  };
-});
+    };
+  }
+);
 
 documents.listen(connection);
 connection.listen();

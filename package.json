@@ -1,6 +1,6 @@
 {
 	"name": "assemblyscript-lang",
-	"main": "lib/index.ts",
+	"main": "lib/client/index.js",
 	"displayName": "AssemblyScript lang",
 	"description": "AssemblyScript language highlighting",
 	"publisher": "battlelinegames",
@@ -14,26 +14,26 @@
 	],
 	"contributes": {
 		"configuration": {
-      "type": "object",
-      "title": "AssemblyScript lang configuration",
-      "properties": {
-        "assemblyScriptLanguageServer.maxNumberOfProblems": {
-          "type": "number",
-          "default": 100,
-          "description": "Controls the maximum number of problems produced by the server."
-        },
-        "assemblyScriptLanguageServer.traceLevel": {
-          "type": "string",
-          "enum": [
-            "off",
-            "messages",
-            "verbose"
-          ],
-          "default": "off",
-          "description": "Traces the communication between VSCode and the assemblyScriptLanguageServer service."
-				}  
-      }
-    },
+			"type": "object",
+			"title": "AssemblyScript lang configuration",
+			"properties": {
+				"assemblyScriptLanguageServer.maxNumberOfProblems": {
+					"type": "number",
+					"default": 100,
+					"description": "Controls the maximum number of problems produced by the server."
+				},
+				"assemblyScriptLanguageServer.traceLevel": {
+					"type": "string",
+					"enum": [
+						"off",
+						"messages",
+						"verbose"
+					],
+					"default": "off",
+					"description": "Traces the communication between VSCode and the assemblyScriptLanguageServer service."
+				}
+			}
+		},
 		"languages": [
 			{
 				"id": "assemblyscript",
@@ -61,6 +61,7 @@
 		"publisherId": "0e98d800-30aa-4f22-a8cb-a0adb3413be5"
 	},
 	"devDependencies": {
+		"@types/node": "^13.11.1",
 		"@types/vscode": "^1.44.0",
 		"typescript": "^3.8.3",
 		"vscode-languageclient": "^6.1.3",
